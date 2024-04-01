@@ -1,2 +1,1 @@
-# New-KTS
 # MewingKTS
