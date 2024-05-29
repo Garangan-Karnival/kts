@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: url("../design_web.png");
+    background-size: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 100%;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.mcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.mcontainer img {
+    margin-left: 50px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.mcontainer a {
+    width: 150px;
+    text-align: center;
+
+}
+
+.ncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+}
+
+.ncontainer a{
+    transition: 0.2s;
+}
+.ncontainer a:hover {
+    transform: scale(1.05);
+    color: #e89c31;
+    background-color: #352f44;
+    box-shadow: 3px 3px 1px 1px;
+}
+
+.navcont {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navcont a {
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+}
+
+.other {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.dakoko {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    border-bottom: 2px solid black;
+}
+
+.dakoko a {
+    margin: 10px;
+}
+
+/*gifts list part*/
+
+.lipart {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.r1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.r2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gcards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 1px 1px;
+    transition: 0.2s;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.gcards button {
+    width: 50%;
+}
+
+.gcards:hover {
+    transform: scale(1.06);
+    background-color: #e89c31;
+}
+
+.gcards img {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+/*page commission*/
+
+.cont-ainer {
+    display: flex;
+    justify-content: center;
+}
+
+.hierophant {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: #352f44;
+    box-shadow: 0px 0px 2px 2px ;
+}
+
+.p1 {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    background-color: #352f44;
+}
+
+.currency {
+    margin-right: 10px;
+}
+
+.p1 h2,h3 {
+    color: #FFFFFF;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.comcard {
+    display: flex;
+    flex-direction: row;
+    background-color: #352f44;
+    box-shadow: 2px 2px 2px 2px black;
+    width: 80%;
+}
+
+.comcard-desc {
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+/*premium page*/
+
+.pcont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 80%;
+    margin-top: 25px;
+}
+
+.pcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #352f44;
+    color: white;
+    height: 80%;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.pcards ul {
+    margin-left: 25px;
+    padding-right: 10px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.benef h4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.benef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benef input[type="button"]{
+    width: 25%;
+}
+
+.mfcontainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.fcontainer {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.fcontainer form {
+    margin-left: 20px;
+}
+
+.fcontainer input {
+    margin: 10px;
+}
+
+.fcontainer a {
+    color: black;
+}
+
+
+
+.fcontainer form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 10px;
+    height: 50px;
+    box-shadow: 0px 0px 2px 2px;
+}
