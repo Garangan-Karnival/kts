@@ -215,7 +215,7 @@ a {
 
 .ccontainer {
     display: flex;
-    height: 632px;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;

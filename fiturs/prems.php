@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    include_once '../koneksi_database.php';
+    $query = "SELECT * FROM user WHERE ID = '".$_SESSION['ID']."'";
+    $result = mysqli_query($mysqli, $query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,22 +42,20 @@
                     <li>2x Commission Reward</li>
                     <li>More Gifts</li>
                 </ul>
-                <input type="button" name="harga" value="$3.99" onclick="location.href='formt1.php';">
             </div>
         </div>
         <div class="pcards">
             <h2>6 Month</h2>
             <img src="asset/premim.jpeg" alt="asd" width="175px" height="175px">
             <hr>
-            <!-- <div class="benef">
+            <div class="benef">
                 <h4>Features</h4>
                 <ul>
                     <li>More Commissions per Week</li>
                     <li>2x Commission Reward</li>
                     <li>More Gifts</li>
                 </ul>
-                <input type="button" name="harga" value="$10.99" onclick="location.href='formt2.php';">
-            </div> -->
+            </div>
         </div>
         <div class="pcards">
             <h2>1 Year</h2>
@@ -64,9 +68,9 @@
                     <li>2x Commission Reward</li>
                     <li>More Gifts</li>
                 </ul>
-                <input type="button" value="$29.99" onclick="location.href='formt3.php';">
             </div>
         </div>
+        <input type="button" value="Buy Premium " onclick="location.href='formt.php';">
     </div>
 </body>
 </html>

@@ -42,9 +42,6 @@
                     // insert user data into table
                     $result = mysqli_query($mysqli,"INSERT INTO user(Username,PASSWORD,Tanggal_lahir,Clearance) VALUES ('$usernames','$passwords','$tanggal','user')");
     
-                    // show message when user added
-                    echo "Data added successfully. <a href='index.php'>View Data Buku</a>";
-                    header("location:index.php");
                 }
                 ?>
             </form>

@@ -2,6 +2,7 @@
 
 require "koneksi_database.php";
 session_start();
+include 'logprocess.php'
 
 ?>
 <!DOCTYPE html>
@@ -23,7 +24,7 @@ session_start();
                     <a href="#premium">Premium</a>
                 </div>
                 <div class="navb21">
-                    <a href="login.php">LOGOUT</a>
+                    <a href="logout.php">LOGOUT</a>
                 </div>
             </div>
         </div>

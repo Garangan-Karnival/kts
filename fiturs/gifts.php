@@ -22,9 +22,14 @@
         </div>
     </div>
     <br>
-    <h6 onclick="location.href='../z.php';">‎</h6>
     <br>
     <br>
+    <div class="tempcont">
+        <div class="temp">
+            <h3>Elian: </h3>
+            <h3> 130</h3>
+        </div>
+    </div>
     <div class="lipart">
         <div class="r1">
             <div class="gcards">

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Table Switch Example</title>
+    <style>
+        .table-container {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation buttons -->
+    <div>
+        <button id="showTableA">Show Table A</button>
+        <button id="showTableB">Show Table B</button>
+        <button id="showTableC">Show Table C</button>
+    </div>
+    <!-- Content div where tables will be displayed -->
+    <div id="content" class="table-container">
+        <!-- Initial table (Table A) -->
+        <table id="tableA">
+            <tr>
+                <th>Header A1</th>
+                <th>Header A2</th>
+            </tr>
+            <tr>
+                <td>Data A1</td>
+                <td>Data A2</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // HTML content for the tables
+        var tableA = `
+            <table id="tableA">
+                <tr>
+                    <th>Header A1</th>
+                    <th>Header A2</th>
+                </tr>
+                <tr>
+                    <td>Data A1</td>
+                    <td><?php echo"ambasing"?></td>
+                </tr>
+            </table>
+        `;
+        
+        var tableB = `
+            <table id="tableB">
+                <tr>
+                    <th>Header B1</th>
+                    <th>Header B2</th>
+                </tr>
+                <tr>
+                    <td>Data B1</td>
+                    <td>Data B2</td>
+                </tr>
+            </table>
+        `;
+        
+        var tableC = `
+            <table id="tableC">
+                <tr>
+                    <th>Header C1</th>
+                    <th>Header C2</th>
+                </tr>
+                <tr>
+                    <td>Data C1</td>
+                    <td>Data C2</td>
+                </tr>
+            </table>
+        `;
+
+        // Function to change the content of the div
+        function showTable(tableContent) {
+            document.getElementById("content").innerHTML = tableContent;
+        }
+
+        // Event listeners for the buttons
+        document.getElementById("showTableA").addEventListener("click", function() {
+            showTable(tableA);
+        });
+
+        document.getElementById("showTableB").addEventListener("click", function() {
+            showTable(tableB);
+        });
+
+        document.getElementById("showTableC").addEventListener("click", function() {
+            showTable(tableC);
+        });
+    </script>
+</body>
+</html>

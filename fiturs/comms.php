@@ -12,7 +12,7 @@
         <div class="ncontainer">
             <div class="navcont">
                 <div class="other">
-                    <a href="gifts1.php">Gifts</a>
+                    <a href="gifts.php">Gifts</a>
                     <a href="prems.php">Premium</a>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     <h2>Available Commission</h2>
                     <div class="currency">
                         <h3>Your Money:</h3>
-                        <h3>E/500</h3>
+                        <h3><?php include 'koncomrew.php';?></h3>
                     </div>
                 </div>
                 <br>
@@ -38,37 +38,50 @@
                     <div class="comcard">
                         <img src="asset/mission.jpg" alt="Placeholder text" width="250px" height="200">
                         <div class="comcard-desc">
-                            <h2>Eliminate 20 Enemies in the game: Call of Duty: Modern Warfare</h2>
-                            <p>Successfully completing this mission will give you E/250</p>
+                            <h2><?php include 'comproc.php'?></h2>
+                            <p>Successfully completing this mission will give you E/
+                            <?php include 'comproc1.php'?></p>
                         </div>
-                        <input type="button" name="submit" value="Get Reward">
+                        <form action="submit_reward.php" method="POST">
+                            <input type="hidden" name="reward" value="<?php include 'comproc1.php'?>">
+                            <input type="submit" name="submit" value="Get Reward">
+                         </form>
                     </div>
                     <br>
                     <div class="comcard">
                         <img src="asset/mission.jpg" alt="Placeholder text" width="250px" height="200">
                         <div class="comcard-desc">
-                            <h2>Eliminate 20 Enemies in the game: Call of Duty: Modern Warfare</h2>
-                            <p>Successfully completing this mission will give you E/250</p>
+                            <h2><?php include 'comproc.php'?></h2>
+                            <p>Successfully completing this mission will give you E/<?php include 'comproc1.php'?></p>
                         </div>
-                        <input type="button" name="submit" value="Get Reward">
+                        <form action="submit_reward.php" method="POST">
+                            <input type="hidden" name="reward" value="<?php include 'comproc1.php'?>">
+                            <input type="submit" name="submit" value="Get Reward">
+                         </form>
                     </div>
                     <br>
                     <div class="comcard">
                         <img src="asset/mission.jpg" alt="Placeholder text" width="250px" height="200">
                         <div class="comcard-desc">
-                            <h2>Eliminate 20 Enemies in the game: Call of Duty: Modern Warfare</h2>
-                            <p>Successfully completing this mission will give you E/250</p>
+                            <h2><?php include 'comproc.php'?></h2>
+                            <p>Successfully completing this mission will give you E/<?php include 'comproc1.php'?></p>
                         </div>
-                        <input type="button" name="submit" value="Get Reward">
+                        <form action="submit_reward.php" method="POST">
+                            <input type="hidden" name="reward" value="<?php include 'comproc1.php'?>">
+                            <input type="submit" name="submit" value="Get Reward">
+                         </form>
                     </div>
                     <br>
                     <div class="comcard">
                         <img src="asset/mission.jpg" alt="Placeholder text" width="250px" height="200">
                         <div class="comcard-desc">
-                            <h2>Eliminate 20 Enemies in the game: Call of Duty: Modern Warfare</h2>
-                            <p>Successfully completing this mission will give you E/250</p>
+                            <h2><?php include 'comproc.php'?></h2>
+                            <p>Successfully completing this mission will give you E/<?php include 'comproc1.php'?></p>
                         </div>
-                        <input type="button" name="submit" value="Get Reward">
+                        <form action="submit_reward.php" method="POST">
+                            <input type="hidden" name="reward" value="<?php include 'comproc1.php'?>">
+                            <input type="submit" name="submit" value="Get Reward">
+                         </form>
                     </div>
                     <br>
                 </div>

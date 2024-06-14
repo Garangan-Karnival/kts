@@ -29,7 +29,7 @@ $update = mysqli_query($mysqli, "UPDATE user SET Username = '$updusername', PASS
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="kantong">
+    <div id="kantong">
         <form action="" method="post" id="formedit">
             <label for="">Username</label>
             <input type="text" name="username" value="<?php echo $username?>"><br>

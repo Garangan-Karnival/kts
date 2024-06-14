@@ -188,6 +188,7 @@ a {
     display: flex;
     flex-direction: row;
     background-color: #352f44;
+    justify-content: space-between;
     box-shadow: 2px 2px 2px 2px black;
     width: 80%;
 }
@@ -195,7 +196,12 @@ a {
 .comcard-desc {
     margin-top: 25px;
     margin-left: 10px;
+    width: 90%;
     color: #FFFFFF;
+}
+
+.comcard form {
+    height: 100%;
 }
 
 /*premium page*/
@@ -203,6 +209,7 @@ a {
 .pcont {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-direction: row;
     height: 80%;
     margin-top: 25px;
@@ -215,6 +222,7 @@ a {
     background-color: #352f44;
     color: white;
     height: 80%;
+    margin-bottom: 150px;
     box-shadow: 2px 2px 2px 2px black;
 }
 
@@ -238,8 +246,12 @@ li {
     align-items: center;
 }
 
-.benef input[type="button"]{
-    width: 25%;
+.pcont input[type="button"]{
+    height: 10%;
+    margin-bottom: 100px;
+    background-color: #352f44;
+    color: white;
+    box-shadow: 2px 2px 5px 2px black;
 }
 
 .mfcontainer {
@@ -250,11 +262,12 @@ li {
 }
 
 .fcontainer {
-    height: 100%;
+    height: fit-content;
     width: 40%;
     display: flex;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: #e89c31;
+    box-shadow: 0px 0px 4px 4px black;
 }
 
 .fcontainer form {
@@ -265,16 +278,51 @@ li {
     margin: 10px;
 }
 
-.fcontainer a {
-    color: black;
+.fcontainer select {
+    margin:10px
 }
 
+.fcontainer a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    box-shadow: 0px 0px 1px 2px;
+}
 
+.fcontainer h1 {
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
 
 .fcontainer form{
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.fcontainer form a{
+    width: 10%;
+    margin: 5px;
+}
+
+.tempcont {
+    display: flex;
+    justify-content: end;
+    width: 90%;
+}
+
+.temp {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
     width: 25%;
+    margin: 10px;
+}
+    
+.temp h3{
+    border-bottom: 2px solid black;
+    padding-left: px;
 }
 
 footer {

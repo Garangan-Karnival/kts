@@ -7,18 +7,34 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
 
-.kantong {
+.tablenav {
+    display: flex;
+    max-width: 800px;
+    width: 80%;
+    justify-content: start;
+    align-items: end;
+}
+
+.tablenav a {
+    margin: 5px;
+}
+
+.tablenav button{
+    margin-right: 5px;
+}
+
+#kantong {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 800px;
-    margin: 20px auto;
 }
 
 table {
